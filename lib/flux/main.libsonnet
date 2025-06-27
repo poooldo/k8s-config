@@ -1,6 +1,5 @@
 // https://github.com/fluxcd/flux2/blob/main/manifests/monitoring/monitoring-config/podmonitor.yaml
 
-local kp = import 'github.com/jsonnet-libs/kube-prometheus-libsonnet/0.14/main.libsonnet';
 local podMonitor = kp.monitoring.v1.podMonitor;
 
 local fluxcd = import 'fluxcd.libsonnet';

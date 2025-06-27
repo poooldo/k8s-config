@@ -34,6 +34,16 @@
     {
       "source": {
         "git": {
+          "remote": "https://github.com/jsonnet-libs/fluxcd-libsonnet.git",
+          "subdir": "2.6.1"
+        }
+      },
+      "version": "f22e59cad67044f826cd1389d5ae972db5b8809b",
+      "sum": "FBcZv6GB0iyQA1NY0VvxeEvZ/fir7JaGr2xRQmJTgkw="
+    },
+    {
+      "source": {
+        "git": {
           "remote": "https://github.com/jsonnet-libs/k8s-libsonnet.git",
           "subdir": "1.24"
         }

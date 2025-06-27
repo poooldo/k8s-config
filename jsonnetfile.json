@@ -27,6 +27,15 @@
         }
       },
       "version": "main"
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/jsonnet-libs/fluxcd-libsonnet.git",
+          "subdir": "2.6.1"
+        }
+      },
+      "version": "main"
     }
   ],
   "legacyImports": true
