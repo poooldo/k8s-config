@@ -18,25 +18,25 @@ local topologySpreadConstraint = k.core.v1.topologySpreadConstraint;
           'hide-headers': 'Server',
           'server-tokens': 'false',
         },
-        replicaCount: 2,
-        topologySpreadConstraints: [
-          topologySpreadConstraint.withMaxSkew(1) +
-          topologySpreadConstraint.withTopologyKey('topology.kubernetes.io/zone') +
-          topologySpreadConstraint.withWhenUnsatisfiable('DoNotSchedule') +
-          topologySpreadConstraint.labelSelector.withMatchLabels({
-            'app.kubernetes.io/name': 'ingress-nginx',
-            'app.kubernetes.io/instance': 'ingress-nginx',
-            'app.kubernetes.io/component': 'controller',
-          }),
-          topologySpreadConstraint.withMaxSkew(1) +
-          topologySpreadConstraint.withTopologyKey('kubernetes.io/hostname') +
-          topologySpreadConstraint.withWhenUnsatisfiable('DoNotSchedule') +
-          topologySpreadConstraint.labelSelector.withMatchLabels({
-            'app.kubernetes.io/name': 'ingress-nginx',
-            'app.kubernetes.io/instance': 'ingress-nginx',
-            'app.kubernetes.io/component': 'controller',
-          }),
-        ],
+        replicaCount: 1,
+        //topologySpreadConstraints: [
+        //  topologySpreadConstraint.withMaxSkew(1) +
+        //  topologySpreadConstraint.withTopologyKey('topology.kubernetes.io/zone') +
+        //  topologySpreadConstraint.withWhenUnsatisfiable('DoNotSchedule') +
+        //  topologySpreadConstraint.labelSelector.withMatchLabels({
+        //    'app.kubernetes.io/name': 'ingress-nginx',
+        //    'app.kubernetes.io/instance': 'ingress-nginx',
+        //    'app.kubernetes.io/component': 'controller',
+        //  }),
+        //  topologySpreadConstraint.withMaxSkew(1) +
+        //  topologySpreadConstraint.withTopologyKey('kubernetes.io/hostname') +
+        //  topologySpreadConstraint.withWhenUnsatisfiable('DoNotSchedule') +
+        //  topologySpreadConstraint.labelSelector.withMatchLabels({
+        //    'app.kubernetes.io/name': 'ingress-nginx',
+        //    'app.kubernetes.io/instance': 'ingress-nginx',
+        //    'app.kubernetes.io/component': 'controller',
+        //  }),
+        //],
         service+: {
           externalTrafficPolicy: 'Local',  // preserve source IPs, needed for whitelist
           type: 'LoadBalancer',

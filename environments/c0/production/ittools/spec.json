@@ -1,0 +1,17 @@
+{
+  "apiVersion": "tanka.dev/v1alpha1",
+  "kind": "Environment",
+  "metadata": {
+    "name": "it-tools",
+    "labels": {
+      "cluster": "c0",
+      "env": "production"
+    }
+  },
+  "spec": {
+    "apiServer": "https://127.0.0.1:6443",
+    "namespace": "tools",
+    "resourceDefaults": {},
+    "expectVersions": {}
+  }
+}
