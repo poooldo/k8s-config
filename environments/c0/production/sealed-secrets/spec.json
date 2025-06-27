@@ -1,0 +1,13 @@
+{
+  "apiVersion": "tanka.dev/v1alpha1",
+  "kind": "Environment",
+  "metadata": {
+    "name": "sealed-secrets"
+  },
+  "spec": {
+    "apiServer": "https://127.0.0.1:6443",
+    "namespace":"kube-system",
+    "resourceDefaults": {},
+    "expectVersions": {}
+  }
+}

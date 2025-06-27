@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "dependencies": [
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/grafana/jsonnet-libs.git",
+          "subdir": "tanka-util"
+        }
+      },
+      "version": "ef364ae521bbb2304f23845e36182a908e295789",
+      "sum": "ShSIissXdvCy1izTCDZX6tY7qxCoepE5L+WJ52Hw7ZQ="
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/jsonnet-libs/cert-manager-libsonnet.git",
+          "subdir": "1.3"
+        }
+      },
+      "version": "5c7b9dfd03df07f27c748613edacfd373635005b",
+      "sum": "vhilkQTOtVwGqjtxdtcAXYuFDmMXnvDyCVqEuzpRmJo="
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/jsonnet-libs/docsonnet.git",
+          "subdir": "doc-util"
+        }
+      },
+      "version": "7c865ec0606f2b68c0f6b2721f101e6a99cd2593",
+      "sum": "zjjufxN4yAIevldYEERiZEp27vK0BJKj1VvZcVtWiOo="
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/jsonnet-libs/k8s-libsonnet.git",
+          "subdir": "1.24"
+        }
+      },
+      "version": "44a9f3d21c089a01f62b22e25bdf553f488a74e8",
+      "sum": "ecHj4f4rxFPcqcu6rSdypniF5xMVRG9A8k+HwD87BTg="
+    }
+  ],
+  "legacyImports": false
+}

@@ -1,0 +1,7 @@
+TODO
+vendor
+*.iml
+manifests
+environments/local
+# Ignore IDE stuff
+.idea/
